@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="orange">#e88d00</color>
+    <color name="grey_mouv">#3b2f31</color>
+    <color name="grey_dark">#9f8c7c</color>
+    <color name="grey_light">#d9cfc5</color>
+
+</resources>
