@@ -16,17 +16,22 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
-        android:debuggable="false">
+        android:screenOrientation="portrait"
+        android:debuggable="true">
         <activity
             android:name="com.ar.listenmouv.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ar.listenmouv.AlarmActivity"
+            android:label="@string/app_name"
+            >
         </activity>
         <service android:name=".PlayService" />
     </application>

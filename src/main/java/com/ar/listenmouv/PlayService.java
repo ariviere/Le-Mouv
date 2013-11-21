@@ -3,6 +3,7 @@ package com.ar.listenmouv;
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -35,6 +36,8 @@ public class PlayService extends Service {
         try {
             mediaPlayer = new MediaPlayer();
 
+            AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+            audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC)/10, 0);
             mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
 
             if(hq)

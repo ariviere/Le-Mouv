@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ar.listenmouv.TimePreference
+        android:key="alarm_time"
+        android:title="Heure"
+        android:defaultValue="08:00"
+        />
+
+    <PreferenceScreen
+        android:key="repeat"
+        android:title="Répéter">
+
+        <CheckBoxPreference
+            android:key="monday"
+            android:title="Lundi"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="tuesday"
+            android:title="Mardi"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="wednesday"
+            android:title="Mercredi"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="thursday"
+            android:title="Jeudi"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="friday"
+            android:title="Vendredi"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="saturday"
+            android:title="Samedi"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="sunday"
+            android:title="Dimanche"
+            android:defaultValue="false" />
+
+    </PreferenceScreen>
+
+    <com.ar.listenmouv.NumberPickerPreference
+        android:title="Volume"
+        android:dialogTitle="Volume"
+        />
+
+</PreferenceScreen>
